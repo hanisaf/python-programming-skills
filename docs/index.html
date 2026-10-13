@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python Programming Skills</title>
+<style>
+:root { --bg:#ffffff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#ba0c2f; --row:#f6f8fa; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --accent:#ff6b81; --row:#151b23; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+       font:16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 960px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: clamp(1.5rem, 5vw, 2rem); line-height: 1.2; margin: 0 0 8px; }
+.subtitle { color: var(--muted); margin: 0 0 24px; }
+p { max-width: 70ch; }
+a { color: var(--accent); }
+table { width: 100%; border-collapse: collapse; margin-top: 24px; table-layout: auto; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:nth-child(even) { background: var(--row); }
+td.num { color: var(--muted); width: 2.5em; }
+.links a { margin-right: .9em; white-space: nowrap; }
+.alt { font-size: .85rem; color: var(--muted); }
+.alt a { color: var(--muted); }
+footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
+@media (max-width: 640px) { th.hide, td.hide { display: none; } .links a { display: block; margin: 0 0 4px; white-space: normal; } td.num { width: 1.5em; } th, td { padding: 8px 4px; } }
+</style></head>
+<body><main>
+<h1>Python Programming Skills for Business Analytics I</h1>
+<p class="subtitle">BUSN 3030E · Terry College of Business, University of Georgia</p>
+<p>Each module has a <b>lecture</b> (preparation, warmup, and workout, with worked solutions) and a
+<b>drill</b> (a graded problem set with hints). These pages are read-only. To run the code, open the
+notebook in <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?urlpath=lab">Binder</a>
+or download it from the <a href="https://github.com/hanisaf/python-programming-skills">course repository</a>.</p>
+<table><thead><tr><th>#</th><th>Module</th><th>Read</th><th class="hide">Run in Binder</th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td>The Analytics Pipeline</td>
+<td class="links"><a href="lectures/01_analytics_pipeline.html">Lecture</a><a href="drills/01_analytics_pipeline_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F01_analytics_pipeline.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F01_analytics_pipeline_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">2</td><td>Jupyter Notebooks and the Markdown Language</td>
+<td class="links"><a href="lectures/02_markdown.html">Lecture</a><a href="drills/02_markdown_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F02_markdown.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F02_markdown_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">3</td><td>Variables</td>
+<td class="links"><a href="lectures/03_variables.html">Lecture</a><a href="drills/03_variables_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F03_variables.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F03_variables_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">4</td><td>Operators</td>
+<td class="links"><a href="lectures/04_operators.html">Lecture</a><a href="drills/04_operators_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F04_operators.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F04_operators_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">5</td><td>Built-In Types</td>
+<td class="links"><a href="lectures/05_types.html">Lecture</a><a href="drills/05_types_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F05_types.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F05_types_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">6</td><td>Strings</td>
+<td class="links"><a href="lectures/06_strings.html">Lecture</a><a href="drills/06_strings_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F06_strings.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F06_strings_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">7</td><td>Control Flow</td>
+<td class="links"><a href="lectures/07_control_flow.html">Lecture</a><a href="drills/07_control_flow_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F07_control_flow.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F07_control_flow_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">8</td><td>Functions</td>
+<td class="links"><a href="lectures/08_functions.html">Lecture</a><a href="drills/08_functions_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F08_functions.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F08_functions_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">9</td><td>Built-In Data Structures</td>
+<td class="links"><a href="lectures/09_data_structures.html">Lecture</a><a href="drills/09_data_structures_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F09_data_structures.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F09_data_structures_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">10</td><td>Comprehensions</td>
+<td class="links"><a href="lectures/10_comprehensions.html">Lecture</a><a href="drills/10_comprehensions_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F10_comprehensions.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F10_comprehensions_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">11</td><td>Putting It Together: A Data Analysis in Pure Python</td>
+<td class="links"><a href="lectures/11_data_analysis.html">Lecture</a><a href="drills/11_data_analysis_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F11_data_analysis.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F11_data_analysis_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">12</td><td>DataFrame and Series</td>
+<td class="links"><a href="lectures/12_dataframe_and_series.html">Lecture</a><a href="drills/12_dataframe_and_series_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F12_dataframe_and_series.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F12_dataframe_and_series_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">13</td><td>Descriptive Statistics and Regression Analysis</td>
+<td class="links"><a href="lectures/13_statistics_and_regression.html">Lecture</a><a href="drills/13_statistics_and_regression_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F13_statistics_and_regression.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F13_statistics_and_regression_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">14</td><td>Visualizing Statistical Relationships and Distributions</td>
+<td class="links"><a href="lectures/14_relationships_and_distributions.html">Lecture</a><a href="drills/14_relationships_and_distributions_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F14_relationships_and_distributions.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F14_relationships_and_distributions_drill.ipynb">drill</a></td></tr>
+<tr><td class="num">15</td><td>Visualizing Categorical Data and Regression Models</td>
+<td class="links"><a href="lectures/15_categorical_and_regression_plots.html">Lecture</a><a href="drills/15_categorical_and_regression_plots_drill.html">Drill</a></td>
+<td class="hide alt"><a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=lectures%2F15_categorical_and_regression_plots.ipynb">lecture</a> · <a href="https://mybinder.org/v2/gh/hanisaf/python-programming-skills/main?labpath=drills%2F15_categorical_and_regression_plots_drill.ipynb">drill</a></td></tr>
+</tbody></table>
+<footer>Course repository: <a href="https://github.com/hanisaf/python-programming-skills">github.com/hanisaf/python-programming-skills</a></footer>
+</main></body></html>
