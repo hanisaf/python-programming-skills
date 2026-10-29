@@ -13,7 +13,7 @@ Each of the 15 modules has two notebooks:
 | Folder | Notebook | Purpose |
 |---|---|---|
 | [`lectures/`](lectures) | **Lecture** | Three parts. *Preparation* explains the concepts with runnable examples, *Warmup* checks understanding with short exercises, and *Workout* combines the concepts on a larger, usually real-world, problem. Exercises come with worked solutions. |
-| [`drills/`](drills) | **Drill** | A graded problem set. Write your answers in the marked cells; expand the 💡 hints when you are stuck. Answers stored in `test_1`, `test_2`, … are checked by the [code tester](https://notebook-tester.safadi-puzzler.com/BUSN3030E). |
+| [`drills/`](drills) | **Drill** | A graded problem set. Write your answers in the marked cells; expand the 💡 hints when you are stuck. Answers stored in `test_1`, `test_2`, … are checked by the [code tester](https://notebook-tester.safadi-puzzler.com/courses/BUSN3030E). |
 
 The lecture notebooks are the course readings: no external textbook is required. Work through the lecture first, then complete the drill.
 
@@ -41,6 +41,38 @@ Each notebook is available in two ways:
 | 13 | Descriptive statistics and regression analysis | [static content](lectures/13_statistics_and_regression.ipynb) · [live code](https://colab.research.google.com/github/hanisaf/python-programming-skills/blob/main/lectures/13_statistics_and_regression.ipynb) | [static content](drills/13_statistics_and_regression_drill.ipynb) · [live code](https://colab.research.google.com/github/hanisaf/python-programming-skills/blob/main/drills/13_statistics_and_regression_drill.ipynb) |
 | 14 | Visualizing relationships and distributions | [static content](lectures/14_relationships_and_distributions.ipynb) · [live code](https://colab.research.google.com/github/hanisaf/python-programming-skills/blob/main/lectures/14_relationships_and_distributions.ipynb) | [static content](drills/14_relationships_and_distributions_drill.ipynb) · [live code](https://colab.research.google.com/github/hanisaf/python-programming-skills/blob/main/drills/14_relationships_and_distributions_drill.ipynb) |
 | 15 | Visualizing categorical data and regression models | [static content](lectures/15_categorical_and_regression_plots.ipynb) · [live code](https://colab.research.google.com/github/hanisaf/python-programming-skills/blob/main/lectures/15_categorical_and_regression_plots.ipynb) | [static content](drills/15_categorical_and_regression_plots_drill.ipynb) · [live code](https://colab.research.google.com/github/hanisaf/python-programming-skills/blob/main/drills/15_categorical_and_regression_plots_drill.ipynb) |
+
+## Module descriptions
+
+**1 · The analytics pipeline.** Introduces the stages of an analytics project (acquire, prepare, explore, model, communicate) and the Jupyter notebook environment used throughout the course. Students learn to run code, why reproducibility matters, and how to load a dataset from the web, taking a first look at Cambridge city salary data. The drill is a practice run that shows how code drills are organized and graded.
+
+**2 · Jupyter notebooks and Markdown.** Covers Markdown, the formatting language for writing narrative in notebooks: headings, emphasis, lists, links, images, quotes, code, tables, and math formulas. Students build a company fact sheet and convert plain text into a formatted table. In the drill, they recreate a formatted course description page using Markdown only.
+
+**3 · Variables.** Introduces the basic syntax of a Python program (statements, comments, indentation) and how to create, name, and reassign variables. Students learn that variables are references to objects, that every object has a type, and that values typed by users arrive as text. The drill converts temperatures from Celsius to Fahrenheit, first from a number and then from user-typed text.
+
+**4 · Operators.** Covers arithmetic, assignment, comparison, Boolean, identity, and membership operators, and how they behave on numbers, strings, and lists. Students translate a business rule and a decision tree into Boolean expressions. The drill builds a text histogram of a class's grade distribution and computes summary figures with operators.
+
+**5 · Built-in types.** Explores Python's simple types (integers, floats, strings, Booleans, and `None`), why floating-point arithmetic can be inexact, and how to convert between types. Students learn which values count as true or false and how to format numbers for reports with f-strings. The drill converts user input to numbers, computes revenue, and formats currency and messages.
+
+**6 · Strings.** Focuses on working with text: indexing and slicing, changing case, cleaning, searching, replacing, splitting, joining, and loading text files from the web. Students extract an email address and a quotation from messy text. In the drill, they take apart entries of a real web server log to find IP addresses, timestamps, request methods, and referring pages.
+
+**7 · Control flow.** Covers decisions with `if`/`elif`/`else`, repetition with `for` and `while` loops, `break` and `continue`, and handling errors with `try`/`except`. Students use the accumulator pattern to compute totals and counts, and build a calendar with nested loops. The drill analyzes a full day of web server logs: counting referrers by domain, failed requests, and bytes served.
+
+**8 · Functions.** Teaches how to define reusable functions with parameters, return values, docstrings, and default arguments, and how to write short `lambda` functions. Students pass functions to other functions, for example to customize sorting, and build a tool that masks sensitive information in messages. The drill packages temperature conversion and currency formatting as functions and sorts data with a custom key.
+
+**9 · Built-in data structures.** Introduces lists, tuples, dictionaries, and sets, and when to use each. Students learn the dictionary counting pattern and set operations, then build a mini news-analytics tool that finds the most frequent topics in news headlines. The drill rebuilds the grade histogram with lists and dictionaries and summarizes grades by letter.
+
+**10 · Comprehensions.** Shows how to build lists, sets, and dictionaries concisely with comprehensions, filtering and transforming data in a single line. Students summarize collections with `sum`, `min`, `max`, `any`, and `all`, and meet the map–filter–reduce pattern of functional programming. The drill answers analytical questions about the grade data with comprehensions and built-in functions.
+
+**11 · Putting it together: data analysis in pure Python.** Combines everything learned so far in a complete analysis without add-on libraries. Students read CSV and JSON data from the web, clean currency values and missing data with functions, answer business questions about technology companies, and present the results in a formatted report. In the drill, they clean and analyze a dataset of car models to compare fuel efficiency across regions and years.
+
+**12 · DataFrame and Series.** Introduces pandas, Python's standard library for tabular data. Students create Series and DataFrames, select data by label and position, filter rows, add computed columns, and load datasets from the web, exploring world development indicators from Gapminder. The drill rebuilds the grade data with pandas, compares two courses, and takes a first look at the Cambridge salary data.
+
+**13 · Descriptive statistics and regression analysis.** Covers summarizing data with descriptive statistics, comparing groups, and measuring correlation, using health insurance charges as the case. Students fit and interpret linear regressions with `statsmodels`, including categorical predictors and predictions, and a logistic regression of diabetes risk. In the drill, they analyze US state crime data with descriptive statistics and regression, and interpret the results.
+
+**14 · Visualizing relationships and distributions.** Introduces seaborn for visualizing relationships between variables with scatter and line plots, and distributions with histograms, density curves, and cumulative plots. Students encode extra variables with color, size, and small multiples, and recreate the Gapminder bubble chart. The drill explores US car crash and insurance data with distribution plots, joint plots, pair plots, and a correlation heat map.
+
+**15 · Visualizing categorical data and regression models.** Covers plots that compare categories (strip, swarm, box, violin, bar, count, and point plots) and plots that show regression fits and diagnose poor ones. Students complete an open-ended analysis of marathon finishing times to see how pacing differs by gender, age, and speed. The drill compares the fuel efficiency of cars by region of origin and visualizes how weight and horsepower relate to mileage.
 
 ## Getting started
 
